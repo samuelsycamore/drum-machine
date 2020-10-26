@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Drum Machine</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -70,7 +71,7 @@ function playSound(e) {
 }
 
 function removeTransition(e) {
-  if (e.propertyName !=='transform') return; // skip this function if it's not transform
+  if (e.propertyName !== 'transform') return; // skip this function if it's not transform
   this.classList.remove('playing'); // remove playing from key class (this = .key)
 }
 
